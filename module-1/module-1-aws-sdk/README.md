@@ -39,11 +39,12 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
 - Execute the Python script `main.py` with the following command in the `module-1/module-1-aws-sdk` directory.
     - `python3 main.py`
 
-- The python script should return log output which describes the username or access key was used, and which AWS account ID was interacted with.
+- The python script should return log output which describes the username or access key was used, which AWS account ID was interacted with and the Amazon Resource Name (ARN) of the username.
     - Example:
     ````log
     2024-06-20 12:40:39.302 | INFO     | functions.aws.get_aws_sts_caller_identity:get_aws_sts_caller_identity:11 - Retrieving AWS Security Token Service (STS) caller identity
     2024-06-20 12:40:39.823 | INFO     | functions.aws.get_aws_sts_caller_identity:get_aws_sts_caller_identity:24 - AWS STS Caller identity details were successfully retrieved with the credentials configured.
     2024-06-20 12:40:39.826 | INFO     | __main__:<module>:11 - AWS username of current credential configuration: AIDAYS......EBV6K
     2024-06-20 12:40:39.827 | INFO     | __main__:<module>:12 - AWS account ID of current credential configuration: 59013421173
+    2024-06-20 12:40:39.828 | INFO     | __main__:<module>:13 - Amazon Resource Name (ARN) for the username of the current credential configuration is: 'arn:aws:iam::59013421173:user/demo-cicd'
     ````
