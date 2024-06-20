@@ -1,5 +1,5 @@
 # Module 1 demo
-## Get Caller identity in AWS with AWS SDK (Boto3 for Python)
+## Interact with AWS - Get Caller identity in AWS with AWS SDK (Boto3 for Python)
 
 ### Introduction
 In the following demo, you will interact with AWS through the AWS SDK, specifically with Boto3 for Python to retrieve the current "caller-identity", commonly known as a "who am I" call to the AWS Secure Token Service to determine which account you are interacting with, and with whose credentials.
