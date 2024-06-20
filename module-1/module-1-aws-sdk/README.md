@@ -14,7 +14,7 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
 - Optional, but recommended: In directory `module-1/module-1-aws-sdk` Create a virtual Python environment and activate it with the following command to avoid installing packages globally on your machine, but rather install them in an isolated virtual environment only.
     - `python3 -m venv .venv`
     - `source .venv/bin/activate`
-        - This command may vary based on the operating system runtime. For Windows/PowerShell it may be `.venv/Scripts/Activate.ps1`
+        - This command may vary based on the operating system runtime or Python version. For Windows/PowerShell it may be `.venv/Scripts/Activate.ps1`
 - Install the requirements from the `requirements.txt` file, with the following command.
     - `pip install -r requirements.txt`
     - All the requirements in the file, except for `loguru` are direct, or indirect dependencies for the Boto3 AWS SDK.
