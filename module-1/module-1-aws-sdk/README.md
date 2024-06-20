@@ -17,6 +17,7 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
         - This command may vary based on the operating system runtime. For Windows/PowerShell it may be `.venv/Scripts/Activate.ps1`
 - Install the requirements from the `requirements.txt` file, with the following command.
     - `pip install -r requirements.txt`
+    - All the requirements in the file, except for `loguru` are direct, or indirect dependencies for the Boto3 AWS SDK.
 
 ### Demo steps
 - Configure environment variables with AWS credentials in your local terminal session
