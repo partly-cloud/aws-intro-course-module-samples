@@ -2,9 +2,9 @@
 ## Get Caller identity in AWS with AWS CLI
 
 ### Introduction
-In the following demo, you will interact with AWS through the AWS SDK, specifically with Boto3 for Python to retrieve the current "caller-identity", commonly known as a "who am I" call to the AWS Secure Token Service to determine which account you are interacting with, and with whose credentials.
+In the following demo, you will interact with AWS through the AWS CLI to retrieve the current "caller-identity", commonly known as a "who am I" call to the AWS Secure Token Service to determine which account you are interacting with, and with whose credentials.
 
-See [official AWS documentation for Boto3](https://docs.aws.amazon.com/pythonsdk/) for more information.
+See [official AWS documentation for AWS CLI](https://docs.aws.amazon.com/cli/) for more information.
 
 ### Assumptions
 It is assumed that you have installed Python and Pip and have the basic knowledge of how to work with Python.
