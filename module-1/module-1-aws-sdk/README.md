@@ -24,17 +24,19 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
     - For IAM Identity Center (SSO) credentials, see [AWS Docs - Getting and refreshing temporary credentials
 ](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtogetcredentials.html).
     - For static IAM user access key and secret, export the environment variables manually with the following command, based on your Operating system:
-        - Linux/MacOS:
+        
+        Linux/MacOS:
         ````bash
         export AWS_ACCESS_KEY_ID=%yourawsaccesskeyid%
         export AWS_SECRET_ACCESS_KEY=%yourawsaccesskeysecret%
         `````
-        - Windows, PowerShell:
+        Windows, PowerShell:
         ````powershell
         $Env:AWS_ACCESS_KEY_ID="%yourawsaccesskeyid%"
         $Env:AWS_ACCESS_KEY_ID="%yourawsaccesskeysecret%"
         ````
-    Note that exporting these values to environment variables make them exposed in memory on your local machine. Interacting with AWS locally like this should not be done in production environments, especially not with the static credentials that does not expire.
+        > ⚠️ **Note that exporting these values to environment variables make them exposed in memory on your local machine.** 
+        Interacting with AWS locally like this should not be done in production environments, especially not with the static credentials that does not expire.
 
 - Execute the Python script `main.py` with the following command in the `module-1/module-1-aws-sdk` directory.
     - `python3 main.py`
