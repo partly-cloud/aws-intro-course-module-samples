@@ -1,1 +1,1 @@
-# aws-intro-course-terraform-samples
+# AWS Introductionary course - Module samples
