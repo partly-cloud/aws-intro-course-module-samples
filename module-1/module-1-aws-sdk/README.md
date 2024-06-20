@@ -43,6 +43,6 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
     ````log
     2024-06-20 12:40:39.302 | INFO     | functions.aws.get_aws_sts_caller_identity:get_aws_sts_caller_identity:11 - Retrieving AWS Security Token Service (STS) caller identity
     2024-06-20 12:40:39.823 | INFO     | functions.aws.get_aws_sts_caller_identity:get_aws_sts_caller_identity:24 - AWS STS Caller identity details were successfully retrieved with the credentials configured.
-    2024-06-20 12:40:39.826 | INFO     | __main__:<module>:11 - AWS username of current credential configuration: AIDAYS2NU4B2WR6IEBV6K
-    2024-06-20 12:40:39.827 | INFO     | __main__:<module>:12 - AWS account ID of current credential configuration: 590183981173
+    2024-06-20 12:40:39.826 | INFO     | __main__:<module>:11 - AWS username of current credential configuration: AIDAYS......EBV6K
+    2024-06-20 12:40:39.827 | INFO     | __main__:<module>:12 - AWS account ID of current credential configuration: 59013421173
     ````
