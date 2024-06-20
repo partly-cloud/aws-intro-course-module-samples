@@ -1,1 +1,1 @@
-# AWS Introductionary course - Module samples
+# AWS Introduction course - Module samples
