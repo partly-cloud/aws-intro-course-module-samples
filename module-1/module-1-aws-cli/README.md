@@ -31,7 +31,7 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
         $Env:AWS_ACCESS_KEY_ID="%yourawsaccesskeysecret%"
         ````
         
-        [!WARNING]> ⚠️ **Note that exporting these values to environment variables make them exposed in memory on your local machine.** 
+        > [!WARNING] ⚠️ **Note that exporting these values to environment variables make them exposed in memory on your local machine.** 
         Interacting with AWS locally like this should not be done in production environments, especially not with the static credentials that does not expire.
 
 - Execute the following command
