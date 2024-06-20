@@ -35,8 +35,9 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
         $Env:AWS_ACCESS_KEY_ID="%yourawsaccesskeyid%"
         $Env:AWS_ACCESS_KEY_ID="%yourawsaccesskeysecret%"
         ````
-        > ⚠️ **Note that exporting these values to environment variables make them exposed in memory on your local machine.** 
-        Interacting with AWS locally like this should not be done in production environments, especially not with the static credentials that does not expire.
+> [!CAUTION]
+> Note that exporting these values to environment variables make them exposed in memory on your local machine.
+> Interacting with AWS locally like this should not be done in production environments, especially not with the static credentials that does not expire.
 
 - Execute the Python script `main.py` with the following command in the `module-1/module-1-aws-sdk` directory.
     - `python3 main.py`
