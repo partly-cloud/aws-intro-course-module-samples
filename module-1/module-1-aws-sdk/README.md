@@ -40,7 +40,7 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
     - `python3 main.py`
 
 - The python script should return log output which describes the username or access key was used, which AWS account ID was interacted with and the Amazon Resource Name (ARN) of the username.
-    - Example:
+    Example:
     ````log
     2024-06-20 12:40:39.302 | INFO     | functions.aws.get_aws_sts_caller_identity:get_aws_sts_caller_identity:11 - Retrieving AWS Security Token Service (STS) caller identity
     2024-06-20 12:40:39.823 | INFO     | functions.aws.get_aws_sts_caller_identity:get_aws_sts_caller_identity:24 - AWS STS Caller identity details were successfully retrieved with the credentials configured.
