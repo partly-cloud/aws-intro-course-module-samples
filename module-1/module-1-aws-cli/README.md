@@ -4,7 +4,8 @@
 ### Introduction
 In the following demo, you will interact with AWS through the AWS CLI to retrieve the current "caller-identity", commonly known as a "who am I" call to the AWS Secure Token Service to determine which account you are interacting with, and with whose credentials.
 
-See [official AWS documentation for AWS CLI](https://docs.aws.amazon.com/cli/) for more information.
+### Reference material
+- [Official AWS documentation for AWS CLI](https://docs.aws.amazon.com/cli/)
 
 ### Assumptions
 It is assumed that you have installed Python and Pip and have the basic knowledge of how to work with Python.
@@ -12,11 +13,11 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
 ### Prerequisites
 - You have credentials for an AWS sandbox account, either through IAM Identity Center (SSO) or an IAM user in the account with access key and secret.
 - Install the AWS CLI
-    - See [AWS Docs - Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+    - See [AWS documentation - Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
 ### Demo steps
-- Configure environment variables with AWS credentials in your local terminal session
-    - For IAM Identity Center (SSO) credentials, see [AWS Docs - Getting and refreshing temporary credentials
+1. Configure environment variables with AWS credentials in your local terminal session
+    - For IAM Identity Center (SSO) credentials, see [AWS documentation - Getting and refreshing temporary credentials
 ](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtogetcredentials.html).
     - For static IAM user access key and secret, export the environment variables manually with the following command, based on your Operating system:
         
@@ -36,12 +37,12 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
 > Interacting with AWS locally like this should not be done in production environments, especially not with the static credentials that does not expire.
 
 
-- Execute the following command
+2. Execute the following command
     ```bash
     aws sts get-caller-identity
     ```
 
-- The AWS CLI should return log output which describes the username or access key was used, which AWS account ID was interacted with and the Amazon Resource Name (ARN) of the username.
+3. The AWS CLI should return log output which describes the username or access key was used, which AWS account ID was interacted with and the Amazon Resource Name (ARN) of the username.
     
     Example:
     ```json

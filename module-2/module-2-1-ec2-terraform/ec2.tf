@@ -4,7 +4,7 @@
 resource "aws_instance" "web_server" {
   ami           = "ami-00ac45f3035ff009e" # ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20240423
   instance_type = "t2.micro"
-  key_name      = "op-thomas-sandbox"
+  key_name      = var.ec2_key_pair_name
 
   vpc_security_group_ids = [aws_security_group.web_sg.id]
 
@@ -16,10 +16,6 @@ resource "aws_instance" "web_server" {
               sudo systemctl enable apache2
               sudo echo "<h1>Hei Verden" > /var/www/html/index.html
               EOF
-
-  tags = {
-    Name = "Web Server"
-  }
 }
 
 # Create a security group for the EC2 instance
@@ -48,13 +44,3 @@ resource "aws_security_group" "web_sg" {
   }
 }
 
-# Key pair for the EC2 instance
-resource "aws_key_pair" "op_thomas_sandbox" {
-  key_name   = "op-thomas-sandbox"
-  public_key = ""
-}
-
-import {
-  to = aws_key_pair.op_thomas_sandbox
-  id = "op-thomas-sandbox"
-}
