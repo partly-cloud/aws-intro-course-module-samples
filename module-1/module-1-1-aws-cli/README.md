@@ -1,4 +1,4 @@
-# Module 1 demo
+# Module 1, demo 1
 ## Interact with AWS - Get Caller identity in AWS with AWS CLI
 
 ### Introduction

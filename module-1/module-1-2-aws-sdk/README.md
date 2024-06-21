@@ -1,4 +1,4 @@
-# Module 1 demo
+# Module 1, demo 2
 ## Interact with AWS - Get Caller identity in AWS with AWS SDK (Boto3 for Python)
 
 ### Introduction
