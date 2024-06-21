@@ -1,4 +1,4 @@
-# Module 2, demo 2
+# Module 2 - Demo 2
 ## Launch an EC2 instance with a public IP and defined user-data - With Terraform
 
 ### Introduction

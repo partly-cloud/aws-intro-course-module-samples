@@ -1,4 +1,4 @@
-# Module 2, demo 1
+# Module 2 - Demo 1
 ## Launch an EC2 instance with a public IP and defined user-data
 
 ### Introduction
