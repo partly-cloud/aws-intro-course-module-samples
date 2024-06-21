@@ -16,7 +16,7 @@ The purpose of this demo is primarily to showcase how the manual ClickOps steps 
 ### Prerequisites
 - You have credentials for an AWS sandbox account, either through IAM Identity Center (SSO) or an IAM user in the account with username and password.
 - You have created an EC2 Key pair in the AWS account.
-    - See [AwS documentation - Create a key pair for your Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html).
+    - See [AWS documentation - Create a key pair for your Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html).
 - Terraform must be installed locally. See [Install Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
 
 ### Demo steps
