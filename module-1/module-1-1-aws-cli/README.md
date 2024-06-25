@@ -7,9 +7,6 @@ In the following demo, you will interact with AWS through the AWS CLI to retriev
 ### Reference material
 - [Official AWS documentation for AWS CLI](https://docs.aws.amazon.com/cli/)
 
-### Assumptions
-It is assumed that you have installed Python and Pip and have the basic knowledge of how to work with Python.
-
 ### Prerequisites
 - You have credentials for an AWS sandbox account, either through IAM Identity Center (SSO) or an IAM user in the account with access key and secret.
 - Install the AWS CLI
