@@ -10,7 +10,7 @@ Once the Instance is launched, you will connect to it with SSH.
 - [AWS Documentation - Run commands on your Amazon EC2 instance at launch](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
 
 ### Assumptions
-- It is assumed that you have the default VPC (172.31.0.0/16) present in your AWS account.
+- It is assumed that you have the default VPC (172.31.0.0/16) present in your AWS account. If you do not have this, a VPC with public subnet (with routing to an Internet Gateway) will suffice.
 
 ### Prerequisites
 - You have credentials for an AWS sandbox account, either through IAM Identity Center (SSO) or an IAM user in the account with username and password.

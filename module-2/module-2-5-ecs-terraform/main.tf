@@ -5,13 +5,6 @@ provider "aws" {
 
 # Terraform backend configuration
 terraform {
-  #backend "s3" {
-  #  bucket         = ""
-  #  key            = "terraform_state"
-  #  region         = ""
-  #  encrypt        = true
-  #  dynamodb_table = ""
-  #}
   required_providers {
     aws = {
       source = "hashicorp/aws"
