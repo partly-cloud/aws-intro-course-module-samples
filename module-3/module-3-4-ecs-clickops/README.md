@@ -1,8 +1,8 @@
-# Module 2 - Demo 4
+# Module 3 - Demo 4
 ## Launch a Docker container service with Elastic Container Service and AWS Fargate
 
 ### Introduction
-In the following demo, you will create an Elastic Container Service (ECS) cluster, an ECS task definition and an ECS service running the docker image which previously published to Elastic Container Registry in module 2 - demo 3.
+In the following demo, you will create an Elastic Container Service (ECS) cluster, an ECS task definition and an ECS service running the docker image which previously published to Elastic Container Registry in module 3 - demo 3.
 
 ### Reference material
 - [AWS Documentation - What is Amazon Elastic Container Service?](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
@@ -31,8 +31,8 @@ In the following demo, you will create an Elastic Container Service (ECS) cluste
     - Task definition family: `<yourtaskdefinitionname>` (anything)
     - Launch type: `AWS Fargate`
     - Task execution role: `Create new role`
-    - Container details - Name: `module-2-demo-docker-container-image`
-    - Container details - URI: `<Get the URI of the latest image of the repository that was created in module 2, demo 1.>`
+    - Container details - Name: `module-3-demo-docker-container-image`
+    - Container details - URI: `<Get the URI of the latest image of the repository that was created in module 3, demo 1.>`
     - Container port: `80`
     - Protocol: `TCP`
     - App protocol: `HTTP`

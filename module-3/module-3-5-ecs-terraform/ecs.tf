@@ -5,13 +5,13 @@ resource "aws_ecs_cluster" "default" {
 
 # Task definition using an ECR image on fargate (not json)
 resource "aws_ecs_task_definition" "module_2_ecr_container" {
-  family                   = "module-2-ecr-container"
+  family                   = "module-3-ecr-container"
   requires_compatibilities = ["FARGATE"]
   cpu                      = 256
   memory                   = 512
   container_definitions = jsonencode([
     {
-      name      = "module-2-demo-docker-container"
+      name      = "module-3-demo-docker-container"
       image     = var.ecr_image_uri
       cpu       = 256
       memory    = 512
@@ -30,7 +30,7 @@ resource "aws_ecs_task_definition" "module_2_ecr_container" {
 
 # ECS Service in the ecs cluster, using the ecr image
 resource "aws_ecs_service" "module_2_ecs_service" {
-  name            = "module-2-demo-docker-container-service"
+  name            = "module-3-demo-docker-container-service"
   cluster         = aws_ecs_cluster.default.id
   launch_type     = "FARGATE"
   desired_count   = 1

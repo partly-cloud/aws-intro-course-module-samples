@@ -1,4 +1,4 @@
-# Module 2 - Demo 2
+# Module 3 - Demo 2
 ## Launch an EC2 instance with a public IP and defined user-data - With Terraform
 
 ### Introduction
@@ -39,12 +39,12 @@ The purpose of this demo is primarily to showcase how the manual ClickOps steps 
 > Note that exporting these values to environment variables make them exposed in memory on your local machine.
 > Interacting with AWS locally like this should not be done in production environments, especially not with the static credentials that does not expire.
 
-2. Update the Terraform variable values in `module-2/module-2-1-ec2-terraform/terraform.tfvars`
+2. Update the Terraform variable values in `module-3/module-3-1-ec2-terraform/terraform.tfvars`
     - `aws_primary_region`: Use the preferred region of your sandbox environment. Example: `eu-north-1`.
     - `allow_ssh_from_ip`: Use your current outbound public IP address. Tip: Find this by browsing to https://www.whatsmyip.org.
     - `ec2_key_pair_name`: Use the name of your EC2 key pair (see prerequisites). If unsure, check in the AWS Console, EC2 > Key pairs.
 
-3. Change working directory in your local terminal session to `module-2/module-2-1-ec2-terraform` of this repository.
+3. Change working directory in your local terminal session to `module-3/module-3-1-ec2-terraform` of this repository.
 4. Initialize Terraform with the following command
     ```bash
     terraform init
@@ -70,7 +70,7 @@ Once you're done with the demo, clean up the resources by executing the `terrafo
     ```bash
     terraform state rm aws_key_pair.sandbox
     ```
-- Comment out or remove the `import` block in `module-2/module-2-1-ec2-terraform/ec2-key-pair.tf`.
+- Comment out or remove the `import` block in `module-3/module-3-1-ec2-terraform/ec2-key-pair.tf`.
 
 > [!WARNING]
 > Using the default VPC and assigning public IP addresses to EC2 instances like this should be restricted to sandbox-activities only. In a production environment, EC2 instances should never be exposed directly to the internet. Instead use private subnets with a load balancer and WAF in front.

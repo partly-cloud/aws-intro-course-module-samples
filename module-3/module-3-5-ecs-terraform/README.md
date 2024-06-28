@@ -1,8 +1,8 @@
-# Module 2 - Demo 5
+# Module 3 - Demo 5
 ## Launch a Docker container service with Elastic Container Service and AWS Fargate - With Terraform
 
 ### Introduction
-In the following demo, you will create an Elastic Container Service (ECS) cluster, an ECS task definition and an ECS service running the docker image which previously published to Elastic Container Registry in module 2 - demo 3.
+In the following demo, you will create an Elastic Container Service (ECS) cluster, an ECS task definition and an ECS service running the docker image which previously published to Elastic Container Registry in module 3 - demo 3.
 
 The purpose of this demo is primarily to showcase how the manual ClickOps steps from the previous ECS demo of this module can be written and deployed with Infrastructure as Code.
 
@@ -37,13 +37,13 @@ The purpose of this demo is primarily to showcase how the manual ClickOps steps 
 > Note that exporting these values to environment variables make them exposed in memory on your local machine.
 > Interacting with AWS locally like this should not be done in production environments, especially not with the static credentials that does not expire.
 
-2. Update the Terraform variable values in `module-2/module-2-5-ecs-terraform/terraform.tfvars`
+2. Update the Terraform variable values in `module-3/module-3-5-ecs-terraform/terraform.tfvars`
     - `aws_primary_region`: Use the preferred region of your sandbox environment. Example: `eu-north-1`.
-    - `ecr_image_uri`: Use the image URI of your container image in ECR from module 2 - demo 3. Remember to include the tag, i.e. `:latest`!
+    - `ecr_image_uri`: Use the image URI of your container image in ECR from module 3 - demo 3. Remember to include the tag, i.e. `:latest`!
     - `vpc_id`: Use the ID of the VPC in your account that you wish to deploy the ECS cluster in.
     - `public_subnet_ids`: Use the IDs of at least two public subnets from the VPC. 
 
-3. Change working directory in your local terminal session to `module-2/module-2-5-ecs-terraform` of this repository.
+3. Change working directory in your local terminal session to `module-3/module-3-5-ecs-terraform` of this repository.
 4. Initialize Terraform with the following command
     ```bash
     terraform init

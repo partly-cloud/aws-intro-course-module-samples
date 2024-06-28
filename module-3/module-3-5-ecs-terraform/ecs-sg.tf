@@ -1,8 +1,8 @@
 # ECS security group for inbound HTTP on TCP 80 and outbound internet access
 resource "aws_security_group" "module_2_ecs_service" {
-  name        = "module-2-ecs-service"
+  name        = "module-3-ecs-service"
   vpc_id      = var.vpc_id
-  description = "ECS Service for Module 2"
+  description = "ECS Service for Module 3"
 
   egress {
     from_port   = 0

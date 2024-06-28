@@ -1,4 +1,4 @@
-# Module 2 - Demo 3
+# Module 3 - Demo 3
 ## Publish Docker image to a private Elastic Container Registry (ECR) with CI/CD
 
 ### Introduction
@@ -30,7 +30,7 @@ It is assumed that you have basic knowledge of how to use Git and GitHub, i.e. f
 4. Proceed with the the repository creating by clicking the `Create repository button`
 
 #### Build and publish Docker image to ECR repository
-1. Create a fork of the course GitHub repository https://github.com/partly-cloud/module-2-demo-docker-container-image
+1. Create a fork of the course GitHub repository https://github.com/partly-cloud/module-3-demo-docker-container-image
 2. In your forked repository, add your AWS-credentials (access key) as GitHub Actions secrets at `Settings` > `Secrets and variables` > `Actions` > `Repository secrets`. See prerequisites.
     - `AWS_ACCESS_KEY_ID`
     - `AWS_ACCESS_KEY_SECRET`
@@ -52,9 +52,4 @@ It is assumed that you have basic knowledge of how to use Git and GitHub, i.e. f
 8. Open the workflow that was triggered on the push to branch `main` and inspect that all jobs completed succesfully.
 9. Navigate to your ECR repository in the AWS Console and verify that an image with tag `latest` now exists in the repository.
 
-    
-
-
-
-
-
+If you are continuing with other demo modules of this course, keep the Elastic Container Registry repository for now, as the Docker image you have pushed to the repository will be used by other modules.
