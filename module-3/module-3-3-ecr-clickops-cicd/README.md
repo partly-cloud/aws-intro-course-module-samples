@@ -23,7 +23,7 @@ It is assumed that you have basic knowledge of how to use Git and GitHub, i.e. f
 2. Open the Elastic Container Registry dashboard, and click the "Create repository" button
 3. Use the following configuration for the repository
     - Visibility settings: `Private`
-    - Repository name: `module2-demo-docker-container-image`
+    - Repository name: `module3-demo-docker-container-image`
     - Tag immutability: `Disabled`
     - Scan on push: `Disabled`
     - KMS encryption: `Disabled`
