@@ -16,10 +16,13 @@ Use the following shortcuts for navigating to each module demo in the repository
 - [Module 3 - Demo 2 - Launch an EC2 instance with a public IP and defined user-data - With Terraform](./module-3/module-3-2-ec2-terraform/README.MD)
 
 #### Elastic Container Registry (ECR) and Elastic Container Service (ECS)
-- [Module 3 - Demo 3 - Publish Docker image to a private Elastic Container Registry (ECR) with ](./module-3/module-3-3-ecr-clickops-cicd/README.md)
+- [Module 3 - Demo 3 - Publish Docker image to a private Elastic Container Registry (ECR) with CI/CD](./module-3/module-3-3-ecr-clickops-cicd/README.md)
 - [Module 3 - Demo 4 - Launch a Docker container service with Elastic Container Service and AWS Fargate](./module-3/module-3-4-ecs-clickops/README.md)
 - [Module 3 - Demo 5 - Launch a Docker container service with Elastic Container Service and AWS Fargate - With Terraform](./module-3/module-3-5-ecs-terraform/README.md)
 
 #### AWS App Runner
-- [Module 3 - Demo 6 - ](module-3/module-3-6-apprunner-clickops/README.MD)
-- [Module 3 - Demo 7 - ](./module-3/module-3-7-apprunner-terraform/README.MD)
+- [Module 3 - Demo 6 - Launch a Docker container with AWS App Runner](module-3/module-3-6-apprunner-clickops/README.MD)
+
+### Module 4 - Networking & Content Delivery
+- [Module 4 - Demo 1 - Distribute EC2 instance HTTP server with CloudFront - With Terraform and ClickOps](./module-3/module-4-1-cloudfront-clickops/README.md)
+- [Module 4 - Demo 2 - Create an example API Gateway deployment - With ClickOps](./module-3/module-4-2-api-gateway-clickops/README.md)
