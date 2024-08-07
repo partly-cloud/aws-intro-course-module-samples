@@ -1,4 +1,4 @@
-# Module 4 - Demo 1
+# Module 6 - Demo 1
 ## Create IAM user with inline IAM policy and IAM role with attached policy. Assume role as IAM user with AWS CLI.
 
 ### Introduction
@@ -24,7 +24,7 @@ You will then, using AWS CLI authenticate as the IAM user, and assume the role i
 3. Click the `Create user` button.
 4. Use the following configuration input (leave fields not mentioned to their default values)
     - User name: `demouser`
-5. Skip the follwing steps by clicking `Next` and confirm the user creation by clicking `Create user`.
+5. Skip the following steps by clicking `Next` and confirm the user creation by clicking `Create user`.
 6. Open the created user and navigate to the `Permissions` tab.
 7. Click the `Add permission` > `Create inline policy`
 8. Using the visual policy editor:
