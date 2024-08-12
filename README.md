@@ -42,5 +42,5 @@ Use the following shortcuts for navigating to each module demo in the repository
 - [Module 5 - Demo 2 - Create a Database Migration Service serverless migration between Aurora PostgreSQL and Aurora MySQL](module-5/module-5-1-dynamodb-terraform/README.MD)
 
 ## Module 6 - Security
-- [Module 6 - Demo 1 - Create IAM user with inline IAM policy and IAM role with attached policy. Assume role as IAM user with AWS CLI.](module-6/module-6-1-iam-clickops/README.md)
+- [Module 6 - Demo 1 - Create IAM user with inline IAM policy and IAM role with attached policy. Assume role as IAM user with AWS CLI](module-6/module-6-1-iam-clickops/README.md)
 

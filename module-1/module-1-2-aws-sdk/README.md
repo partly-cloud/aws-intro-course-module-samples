@@ -12,7 +12,7 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
 
 ### Prerequisites
 - You have credentials for an AWS sandbox account, either through IAM Identity Center (SSO) or an IAM user in the account with access key and secret.
-- Optional, but recommended: In directory `module-1/module-1-aws-sdk` Create a virtual Python environment and activate it with the following command to avoid installing packages globally on your machine, but rather install them in an isolated virtual environment only.
+- Optional, but recommended: In directory `module-1/module-1-2-aws-sdk` Create a virtual Python environment and activate it with the following command to avoid installing packages globally on your machine, but rather install them in an isolated virtual environment only.
     - `python3 -m venv .venv`
     - `source .venv/bin/activate`
         - This command may vary based on the operating system runtime or Python version. For Windows/PowerShell it may be `.venv/Scripts/Activate.ps1`
@@ -40,7 +40,7 @@ It is assumed that you have installed Python and Pip and have the basic knowledg
 > Note that exporting these values to environment variables make them exposed in memory on your local machine.
 > Interacting with AWS locally like this should not be done in production environments, especially not with the static credentials that does not expire.
 
-2. Execute the Python script `main.py` with the following command in the `module-1/module-1-aws-sdk` directory.
+2. Execute the Python script `main.py` with the following command in the `module-1/module-1-2-aws-sdk` directory.
     - `python3 main.py`
 
 3. The python script should return log output which describes the username or access key was used, which AWS account ID was interacted with and the Amazon Resource Name (ARN) of the username.
